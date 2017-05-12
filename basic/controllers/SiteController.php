@@ -123,9 +123,14 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionSay($message = 'Привет')
+       public function actionSay($message = 'Привет')
     {
         return $this->render('say', ['message' => $message]);
+    }
+
+        public function actionSayjs($message = 'Привет')
+    {
+        return $this->render('sayjs',['message' => $message]);
     }
 
 }
